@@ -1,0 +1,5 @@
+<a>hello</a>
+<div class="ranking-list" *ngFor="let player of guestService.info">
+  <p>id: {{player.id}}  name: {{player.name}}  point:{{player.point}}  level:{{player.level}}</p>
+</div>
+<a class="start" routerLink="/game">返回</a>

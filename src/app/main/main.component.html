@@ -1,0 +1,28 @@
+<!-- <button type="button"(click)="()"></button>jiaren -->
+<!-- <h2>{{guest.name | uppercase}} Details</h2>
+<div>
+  <label for="name">Hero name: </label>
+  <input id="name" [(ngModel)]="guest.name" placeholder="name">
+</div> -->
+<!-- <a class="button" routerLink=
+  "/start">start</a>
+<button (click)="click()">666</button> -->
+<div class="background">
+  <input id="name" [(ngModel)]="name" placeholder="在此处输入要加入的玩家名" />
+  <div class="add">
+    <a class="add-player-button" (click)="add_player()">
+      <img src="/assets/img/add.png" />
+    </a>
+  </div>
+  <!-- <button style="background: url('/assets/img/start_button.png');">
+    <button type="button" (click)="add_player()">
+    </button>
+  </button> -->
+
+  <a class="button" routerLink="/game">match</a>
+  <div class="show">
+    <p *ngFor="let player of guestService.info">
+      位序: {{ player.id }} 姓名: {{ player.name }}
+    </p>
+  </div>
+</div>

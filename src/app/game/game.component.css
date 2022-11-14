@@ -1,0 +1,60 @@
+*{
+  color:#99CCFF;
+  font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.ranking-list{/*满意*/
+  font-size: 22px;
+  line-height: 20px;
+  top: 5%;
+  margin-left:65%;
+  display: flex;
+}
+a{
+  margin-left: 80%;
+  font-size: 30px;
+}
+button{
+  font-size: 100px;
+}
+/* button position */
+.roll{
+  position: fixed;
+  bottom:10%;
+  left: 30%;
+}
+.dices1{
+  position: fixed;
+  top: 20%;
+  left: 30%;
+}
+.dices2{
+  position:fixed;
+  top: 20%;
+  left: 42%;
+}
+.dices3{
+  position:fixed;
+  top: 20%;
+  left: 54%;
+}
+.dices4{
+  position: fixed;
+  top: 40%;
+  left: 30%;
+}
+.dices5{
+  position: fixed;
+  top: 40%;
+  left: 42%;
+}
+.dices6{
+  position: fixed;
+  top: 40%;
+  left: 54%;
+}
+.currentPlayer{
+  font-size: 40px;
+  position: fixed;
+  bottom: 10%;
+  left:0%
+}
