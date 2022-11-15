@@ -1,12 +1,20 @@
 <!-- <p>密码</p> -->
 <!-- <a class="button" routerLink="/main">游客登录</a>
 <a class="button" routerLink="/main">登录</a> -->
+<div class="background">
 <div class="name-input">
   <p id="firstname">用户名</p>
   <input id="name" [(ngModel)]="name" placeholder="在此处输入用户名" />
 </div>
 <!-- <button type="button" (click)="add_player()">登录</button> -->
-<button class= ""type="button" (click)="visitor_login()">游客登录</button>
-<!-- <button type="button" (click)="register()">注册</button> -->
-
+<a class= "visitor"(click)="visitor_login()">
+  <img src="/assets/img/register.png"/>
+</a>
+</div>
+<!-- <button type="button" (click)="register()">注册</button> --
 <!-- <div>{{}}</div> -->
+<!-- <div class="jump">
+  <a href="/main">
+   <img src="/assets/img/add.png">
+  </a>
+</div> -->

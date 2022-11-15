@@ -7,7 +7,7 @@
   background-image: url("/assets/img/start.jpg");
   z-index: -1;
 }
-a{
+/* a{
   color:#99CCFF;
   font-family:"Comic Sans MS", cursive, sans-serif;
   border-style: solid;
@@ -19,11 +19,17 @@ a{
   text-decoration: none;
   border-radius: 60px;
   z-index: 1;
-}
+} */
 
-img{
+.rule{
   position: fixed;
   /* margin-top: 0%; */
-  margin-left: 18%;
+  left:18%;
   z-index: 0;
+}
+.back{
+  position:fixed;
+  left: 40%;
+  bottom: 0%;
+  z-index: 1;
 }

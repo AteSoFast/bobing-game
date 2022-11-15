@@ -33,15 +33,7 @@
   flex-direction: column;
   margin-left: 48%;
   padding-top: 8%;
-  /* margin-top: 10%; */
-  /* position: absolute; */
-  /* margin-top:20%;
-  margin-left:10px; */
-  /* line-height: 5px; */
-}
-p{
   font-size: 30px;
-  margin-top: 0;
 }
 input{
   font-size: 54px;
@@ -52,12 +44,17 @@ input{
 .add{
   position: fixed;
   top:40%;
-  left: 20%;
+  left: 18%;
 }
 img{
   width: 200px;
   height: 100px;
   border: 0;
+}
+.game{
+  position: fixed;
+  bottom:0%;
+  right:340px;
 }
 /* .button {
   font-size: 50px;
@@ -65,8 +62,6 @@ img{
   top:35%;
   margin-left:20%;
 } */
-
 .add-player-button {
-  z-index: 999;
   cursor: pointer;
 }

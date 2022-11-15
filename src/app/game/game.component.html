@@ -1,19 +1,22 @@
-<!-- <img src="pulpit.jpg" alt="Pulpit rock" width="261" height="230"> -->
-<!-- <img src="url" alt="some_text"> -->
-<!-- <h2>{{guest.name}} Details</h2>
-<div><span>name: </span>{{Guest.name}}</div> -->
-<!-- output -->
-<!-- <div class="rank"> -->
-<a>排行榜</a>
+<div class="background"></div>
+<a class="rank">排行榜</a>
 <div class="ranking-list" *ngFor="let player of guestService.info">
   <p>位序: {{player.id}}  姓名: {{player.name}}  点数:{{player.point}}  等级:{{player.level}}</p>
 </div>
-
-<!-- <div>{{output}}</div> -->
 <div class="roll">
-<button type="button" (click)="game()">roll</button>
-<button type="button" (click)="complete()">confirm</button>
+
+<a class="throw" (click)="game()">
+  <img src="/assets/img/roll.png" />
+</a>
+
+<a class="complete" (click)="complete()">
+  <img src="/assets/img/confirm.png" />
+</a>
 </div>
+
+<!-- background -->
+<img class="bowl" src="/assets/img/bowl.png" width="530px" height="530px">
+<!--  -->
 
 <div class="dices1">
 <img [src]="'/assets/img/' + dice[0] + '.png'" width="100" height="100">
