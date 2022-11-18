@@ -3,8 +3,10 @@
 <a class="button" routerLink="/main">登录</a> -->
 <div class="background">
 <div class="name-input">
-  <p id="firstname">用户名</p>
+  <p class="user" id="firstname">用户名</p>
+<div class="input">
   <input id="name" [(ngModel)]="name" placeholder="在此处输入用户名" />
+</div>
 </div>
 <!-- <button type="button" (click)="add_player()">登录</button> -->
 <a class= "visitor"(click)="visitor_login()">

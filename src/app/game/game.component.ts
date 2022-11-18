@@ -10,12 +10,13 @@ import { GuestService } from '../guest.service';
 })
 export class GameComponent implements OnInit {
   public temp = 1;
-  public dice: number[]=[];
+  public dice: number[]=[7,7,7,7,7,7];
   // public show: boolean = true;
   // public id: boolean = true;
   public use:string="true";
   public times:number=0;
   public output: string="无";
+  public format: string=".gif";
   constructor(
     public guestService: GuestService,
   ) {
@@ -35,12 +36,14 @@ export class GameComponent implements OnInit {
     // const index = this.guestService.info.findIndex(m => m.id == id);
     const player = this.guestService.info[this.guestService.index];
     player.point = [];
+    this.format=".png";
     for (let i = 0; i < 6; i++) {
       player.point.push(Math.floor(Math.random()*6+1));
     }
     for(let i=0;i<6;i++){
       this.dice[i]=player.point[i];
     }
+
     //推测加一
     // if (this.guestService.index != this.guestService.info.length - 1) {
     //   this.guestService.index++;
@@ -303,7 +306,11 @@ export class GameComponent implements OnInit {
     // this.detect();
   }
   complete(){
-    if(this.use=="false")
+    if(this.use=="false"){
+      for(let i=0;i<6;i++){
+        this.dice[i]=7;
+      }
+      this.format=".gif";
       if (this.guestService.index != this.guestService.info.length - 1) {
         // this.currentPlayer.point=[0,0,0,0,0,0];
         this.guestService.index++;
@@ -323,6 +330,7 @@ export class GameComponent implements OnInit {
       }
       this.use="true";
       this.output="无";
+    }
     // else{
     //   console.log("you should roll first");
     // }

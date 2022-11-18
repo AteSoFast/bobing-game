@@ -27,6 +27,10 @@ export class MainComponent implements OnInit {
   //     return this.guestService.info[this.guestService.index];
   //   }
   // }
+  // delete(player: Hero): void {
+  //   this.heroes = this.heroes.filter(h => h !== hero);
+  //   this.guestService.deletePlayer(player.id).subscribe();
+  // }
   ngOnInit(): void {
   }
   // add:void{

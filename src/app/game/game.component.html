@@ -1,7 +1,9 @@
-<div class="background"></div>
-<a class="rank">排行榜</a>
-<div class="ranking-list" *ngFor="let player of guestService.info">
-  <p>位序: {{player.id}}  姓名: {{player.name}}  点数:{{player.point}}  等级:{{player.level}}</p>
+<div class="background">
+<!-- <a class="rank">排行榜</a> -->
+<div class="up">
+  <div class="ranking-list" *ngFor="let player of guestService.info">
+  <p class="rank">位序: {{player.id}}  姓名: {{player.name}}  点数:{{player.point}}  等级:{{player.level}}</p>
+  </div>
 </div>
 <div class="roll">
 
@@ -15,26 +17,26 @@
 </div>
 
 <!-- background -->
-<img class="bowl" src="/assets/img/bowl.png" width="530px" height="530px">
+<img class="bowl" src="/assets/img/bowl.png" ><!--width="530px" height="530px" -->
 <!--  -->
 
 <div class="dices1">
-<img [src]="'/assets/img/' + dice[0] + '.png'" width="100" height="100">
+<img [src]="'/assets/img/' + dice[0] + this.format" width="100" height="100">
 </div>
 <div class="dices2">
-<img [src]="'/assets/img/' + dice[1] + '.png'" width="100" height="100">
+<img [src]="'/assets/img/' + dice[1] + this.format" width="100" height="100">
 </div>
 <div class="dices3">
-<img [src]="'/assets/img/' + dice[2] + '.png'" width="100" height="100">
+<img [src]="'/assets/img/' + dice[2] + this.format" width="100" height="100">
 </div>
 <div class="dices4">
-<img [src]="'/assets/img/' + dice[3] + '.png'" width="100" height="100">
+<img [src]="'/assets/img/' + dice[3] + this.format" width="100" height="100">
 </div>
 <div class="dices5">
-<img [src]="'/assets/img/' + dice[4] + '.png'" width="100" height="100">
+<img [src]="'/assets/img/' + dice[4] + this.format" width="100" height="100">
 </div>
 <div class="dices6">
-<img [src]="'/assets/img/' + dice[5] + '.png'" width="100" height="100">
+<img [src]="'/assets/img/' + dice[5] + this.format" width="100" height="100">
 </div>
 
 
@@ -45,4 +47,5 @@
 <div>姓名: {{currentPlayer.name}}<div>
 <div>点数: {{currentPlayer.point}}<div>
 <div>等级: {{currentPlayer.level}}<div>
+</div>
 </div>

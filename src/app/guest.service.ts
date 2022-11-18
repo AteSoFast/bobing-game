@@ -40,6 +40,7 @@ export class GuestService {
     return id;
   }
 
+
   // delete(guest: Guest): void {
   //   this.guests = this.guests.filter(h => h !== guest);
   //   this.guestService.deleteGuest(guest.id).subscribe();

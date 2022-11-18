@@ -1,5 +1,4 @@
 * {
-  color: #99ccff;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
@@ -42,4 +41,10 @@ input {
   width: 80%;
   justify-content: center;
   align-items: center;
+}
+.user{
+  color: #FFFF99;
+}
+.input{
+  color: #A0A0A0;
 }

@@ -25,6 +25,8 @@
   <div class="show">
     <p *ngFor="let player of guestService.info">
       位序: {{ player.id }} 姓名: {{ player.name }}
+      <!-- <button type="button" class="delete" title="delete hero"
+      (click)="delete(player)">x</button> -->
     </p>
   </div>
 </div>
